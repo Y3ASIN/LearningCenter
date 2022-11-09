@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <link rel="stylesheet" href="./login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="form">
+      <span class="form_title">Login</span>
+      <form class="form-content" method="post">
+        <div class="form-field">
+          <input
+            name="name"
+            type="text"
+            class="form-input form-input--user"
+            id="username"
+            placeholder="username"
+            required
+            autofocus
+          />
+          <i class="form-icon fa-solid fa-user"></i>
+        </div>
+
+        <div class="form-field">
+          <i class="form-icon form-icon--hide fa-solid fa-eye-slash"></i>
+          <input
+            name="password"
+            type="password"
+            class="form-input form-input--pass"
+            id="password"
+            placeholder="password"
+            required
+          />
+          <i class="form-icon fa-solid fa-lock"></i>
+        </div>
+        <div class="form-forgotpass"><a href="#">Forgot Password?</a></div>
+        <input type="submit" value="Login" class="form-btn" />
+        <div class="form-signup">Not a member?<a href="#"> Signup</a></div>
+      </form>
+    </div>
+    <script src="./login.js"></script>
+  </body>
+</html>
